@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- primary meta tags -->
+  <title>Fournos - Amazing & Delicious Food</title>
+  <meta name="title" content="Fournos - Amazing & Delicious Food">
+  <meta name="description" content="description">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+
+  <!-- google font link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- custom css link -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- preload images -->
+  <link rel="preload" as="image" href="./assets/images/fournos-inside.jpg">
+</head>
+
+<body id="top">
+
+  <!-- #PRELOADER -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Fournos</p>
+  </div>
+
+  <!-- #TOP BAR -->
+  <div class="topbar">
+    <div class="container">
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">600 Dutton Ave, Ste C, San Leandro, CA 94577</span>
+      </address>
+      <div class="separator"></div>
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Daily | 11:00am to 9:30pm</span>
+      </div>
+      <a href="tel:+15105673453" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">510-567-3453</span>
+      </a>
+      <div class="separator"></div>
+      <a href="mailto:fournossl@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">fournossl@gmail.com</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- #HEADER -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Fournos - Home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Menu</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+          <address class="body-4">
+            600 Dutton Ave, Ste C, <br>
+            San Leandro, CA 94577
+          </address>
+          <p class="body-4 navbar-text">Open | 11:00am - 9:30pm</p>
+          <a href="mailto:booking@Fournos.com" class="body-4 sidebar-link">fournossl@gmail.com</a>
+          <div class="separator"></div>
+          <p class="contact-label">Carry-Out & Reservations</p>
+          <a href="tel:5105673453" class="body-1 contact-number hover-underline">
+            510-567-3453
+          </a>
+        </div>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <!-- #HERO -->
+      <style>
+        .hero-text-container {
+          position: absolute;
+          left: 50%;
+          top: 35%;
+          transform: translateX(-50%);
+          width: 100%;
+          max-width: 800px;
+          text-align: center;
+        }
+        .hero-title {
+          font-weight: bold;
+          color: #fff;
+          text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+        .hero {
+          position: relative;
+          height: 100vh;
+        }
+        .slider-bg {
+          width: 100%;
+          height: 100%;
+        }
+        .slider-bg img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      </style>
+      <section class="hero text-center" aria-label="home" id="home">
+        <div class="slider-bg">
+          <img src="./assets/images/fournos-inside.jpg" width="1880 height="950" alt="Fournos restaurant interior" class="img-cover">
+        </div>
+        <div class="hero-text-container">
+          <h1 class="display-1 hero-title">FOURNOS</h1>
+        </div>
+        <a href="https://www.doordash.com/store/fournos---600-dutton-ave-ste-c---ste--ste-c-san-leandro-34233149/71610609/" class="hero-btn has-after" target="_blank">
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+          <span class="label-2 text-center span">Order Online</span>
+        </a>
+      </section>
+    </article>
+
+    <!-- #ABOUT -->
+    <section class="section about text-center" aria-labelledby="about-label" id="about">
+      <style>
+        .about .about-content .section-text {
+          font-size: 32px;
+        }
+        .about {
+          padding-bottom: 20px;
+        }
+      </style>
+      <div class="container">
+        <div class="about-content">
+          <h2 class="headline-1 section-title">About Us</h2>
+          <p class="section-text">
+            Fournos is a three-generation, family-owned restaurant in San Leandro, California. 
+            Curated with nostalgic recipes from the old country, our flavors come straight from 
+            the ovens of Greece and Italy. The heart of our restaurant’s success is rooted in culture, family,
+            and tradition. Our hope is that our food makes you feel like part of our family.
+          </p>
+          <div class="contact-label">Carry-Out & Reservations</div>
+          <a href="tel:+15105673453" class="body-1 contact-number hover-underline">510-567-3453</a>
+        </div>
+        <figure class="about-banner">
+          <img src="./assets/images/about-fournos.png" width="570" height="570" loading="lazy" alt="about banner" class="w-100" data-parallax-item data-parallax-speed="1">
+          <div class="abs-img abs-img-2 has-before">
+            <img src="./assets/images/badge-2.png" width="133" height="134" loading="lazy" alt="">
+          </div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- #SPECIAL DISH -->
+    <section class="special-dish text-center" aria-labelledby="dish-label">
+      <div class="special-dish-banner">
+        <img src="./assets/images/special-dish-banner.png" width="940" height="900" loading="lazy" alt="special dish" class="img-cover">
+      </div>
+      <div class="special-dish-content bg-black-10">
+        <div class="container">
+          <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="" class="abs-img">
+          <p class="section-subtitle label-2">Featured Pizza</p>
+          <h2 class="headline-1 section-title">The Greek God</h2>
+          <p class="section-text">
+            Our house favorite pizza — made with the original recipe brought all the way from Baltimore, Maryland nearly 40 years ago!
+            <br><br>
+            House-Made Pizza Sauce, Salami, Green Pepper, Red Onion, Kalamata Olive, Tomato, Feta Cheese, Oregano, Grande Cheese Blend.
+          </p>
+          <a href="menu.html" class="btn btn-primary">
+            <span class="text text-1">View Menu</span>
+            <span class="text text-2" aria-hidden="true">View Menu</span>
+          </a>
+        </div>
+      </div>
+      <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+      <img src="./assets/images/shape-2.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+    </section>
+
+    <!-- #MENU -->
+    <section class="section menu" aria-label="menu-label" id="menu">
+      <div class="container">
+        <h2 class="headline-1 section-title text-center">Fournos Favorites</h2>
+        <ul class="grid-list">
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Saganaki</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  Flambéed Greek Kasseri cheese—opa!  
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Greek Salad</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  Crisp, colorful, and full of Greek flavor.  
+                  Romaine lettuce, tomatoes, cucumbers, red onions, green bell peppers, Kalamata olives, feta cheese
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Blue Caesar</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  A bold twist on Caesar with blue cheese and bacon.  
+                  Whole-leaf romaine lettuce, house-made blue cheese dressing, Danish blue cheese crumbles, chopped bacon, cherry tomatoes
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Margherita Pizza</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  Fresh and classic—just like it should be.  
+                  San Marzano tomato sauce, Galbani fresh mozzarella, fresh basil
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Spaghetti Puttanesca</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  Savory, briny, and full of character.  
+                  Anchovies, Kalamata olives, capers, house-made marinara sauce
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Gyro Pita</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  The Greek wrap that does it all.  
+                  Lamb and beef, tomatoes, red onions, tzatziki sauce, fries, pita bread
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Meatball Stromboli</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  Cheesy, saucy, stuffed, and golden.  
+                  Grande cheese, pork and beef meatballs, garlic, house-made pizza sauce
+                </p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="menu-card hover:card">
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Tiramisu</a>
+                  </h3>
+                  <span class="span title-2"></span>
+                </div>
+                <p class="card-text label-1">
+                  Our famous tiramisu—creamy and indulgent.  
+                  Espresso-soaked ladyfingers, mascarpone cream, cocoa powder
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+        <a href="menu.html" class="btn btn-primary">
+          <span class="text text-1">View Menu</span>
+          <span class="text text-2" aria-hidden="true">View Menu</span>
+        </a>
+        <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape" class="shape shape-2 move-anim">
+        <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape" class="shape shape-3 move-anim">
+      </div>
+    </section>
+  </main>
+
+  <!-- #FOOTER -->
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container" id="contact">
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="Fournos home">
+          </a>
+          <address class="body-4">
+            600 Dutton Ave, Ste C, San Leandro, CA 94577
+          </address>
+          <a href="mailto:fournossl@gmail.com" class="body-4 contact-link">fournossl@gmail.com</a>
+          <a href="tel:5105673453" class="body-4 contact-link">Phone | 510-567-3453</a>
+          <p class="body-4">
+            Open | 11:00am - 9:30pm
+          </p>
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Menu</a>
+          </li>
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <a href="https://g.co/kgs/qoCgYXc" class="label-2 footer-link hover-underline">Google Maps</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/slfournos" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fournos_sl/" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.yelp.com/biz/fournos-san-leandro" class="label-2 footer-link hover-underline">Yelp</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 Fournos. All Rights Reserved | Powered by <a href="https://github.com/codewithsadee" target="_blank" class="link">GitHub</a>
+          <br>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+    <!-- #BACK TO TOP -->
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-bottom">
+      <p class="copyright">
+        &copy; 2025 Fournos. All Rights Reserved |
+        Powered by <a href="https://github.com/codewithsadee" target="_blank" class="link">GitHub</a>
+        <br>
+        <a href="#" class="body-4">Privacy Policy</a> |
+        <a href="#" class="body-4">Terms of Service</a>
+      </p>
+    </div>
+  </footer>
+
+  <!-- Custom JS -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- Ionicons -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

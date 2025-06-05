@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fournos Menu</title>
+  <meta name="title" content="Fournos Menu">
+  <meta name="description" content="Fournos Restaurant Menu - Amazing & Delicious Food">
+  <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <style>
+    /* Optional: If you want to add a background image like your menu page, uncomment below */
+    /*
+    body {
+      background-image: url('https://images.unsplash.com/photo-1600891965050-7c9d6d2b7dfb');
+      background-size: cover;
+      background-position: center;
+    }
+    */
+  </style>
+</head>
+<body id="top">
+
+  <!-- Preloader (optional, can be removed if not needed) -->
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Fournos</p>
+  </div>
+
+  <!-- Top Bar -->
+  <div class="topbar">
+    <div class="container">
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">
+          600 Dutton Ave, Ste C, San Leandro, CA 94577
+        </span>
+      </address>
+      <div class="separator"></div>
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">Daily | 11:00am to 9:30pm</span>
+      </div>
+      <a href="tel:+15105673453" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">510-567-3453</span>
+      </a>
+      <div class="separator"></div>
+      <a href="mailto:fournossl@gmail.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+        <span class="span">fournossl@gmail.com</span>
+      </a>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header" data-header>
+    <div class="container">
+      <a href="#home" class="logo">
+        <img src="./assets/images/logo.svg" width="160" height="50" alt="Fournos - Home">
+      </a>
+      <nav class="navbar" data-navbar>
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+        <a href="#" class="logo">
+          <img src="./assets/images/fournosnew.png" width="160" height="50" alt="Fournos - Home">
+        </a>
+        <ul class="navbar-list">
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Home</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="menu.html" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+              <span class="span">Menu</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">About Us</span>
+            </a>
+          </li>
+          <li class="navbar-item">
+            <a href="#contact" class="navbar-link hover-underline">
+              <div class="separator"></div>
+              <span class="span">Contact</span>
+            </a>
+          </li>
+        </ul>
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visit Us</p>
+          <address class="body-4">
+            600 Dutton Ave, Ste C, <br>
+            San Leandro, CA 94577
+          </address>
+          <p class="body-4 navbar-text">Open | 11:00am - 9:30pm</p>
+          <a href="mailto:fournossl@gmail.com" class="body-4 sidebar-link">fournossl@gmail.com</a>
+          <div class="separator"></div>
+          <p class="contact-label">Carry-Out & Reservations</p>
+          <a href="tel:5105673453" class="body-1 contact-number hover-underline">
+            510-567-3453
+          </a>
+        </div>
+      </nav>
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+      <div class="overlay" data-nav-toggler data-overlay></div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <article>
+      <!-- Menu Section -->
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+          <h2 class="headline-1 section-title text-center">Menu</h2>
+          
+          <!-- Starters -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Starters</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Mozzarella Sticks</span>
+                    <span class="span title-2 price">$10</span>
+                  </div>
+                  <p class="card-text label-1">Served with house-made marinara</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Fried Zucchini</span>
+                    <span class="span title-2 price">$10</span>
+                  </div>
+                  <p class="card-text label-1">Served with house-made marinara</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Garlic Cheese Bread</span>
+                    <span class="span title-2 price">$8</span>
+                  </div>
+                  <p class="card-text label-1">Served with house-made marinara</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Tzatziki</span>
+                    <span class="span title-2 price">$8</span>
+                  </div>
+                  <p class="card-text label-1">Served with warm pita</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Meatballs</span>
+                    <span class="span title-2 price">$10</span>
+                  </div>
+                  <p class="card-text label-1">Pork and beef meatballs topped with cheese and house-made marinara</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Dolmades</span>
+                    <span class="span title-2 price">$8</span>
+                  </div>
+                  <p class="card-text label-1">Rice-stuffed grape leaves</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">French Fries</span>
+                    <span class="span title-2 price">$6</span>
+                  </div>
+                  <p class="card-text label-1">Crispy seasoned fries</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Garlic Fries</span>
+                    <span class="span title-2 price">$8</span>
+                  </div>
+                  <p class="card-text label-1">Fresh garlic, Parmesan cheese, chopped parsley</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Wings -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Wings</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Eight or Twelve Piece</span>
+                    <span class="span title-2 price">$12/$17</span>
+                  </div>
+                  <p class="card-text label-1">Choice of buffalo, Mocny & Sons spicy or regular BBQ, lemon pepper, and garlic parm. Served with celery sticks and choice of blue cheese or ranch dressing</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Salads -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Salads</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">House Salad</span>
+                    <span class="span title-2 price">$6/$10</span>
+                  </div>
+                  <p class="card-text label-1">Chopped romaine lettuce, tomatoes, cucumbers, Blue cheese, ranch, or house dressing. Add chicken or gyro meat</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Greek Salad</span>
+                    <span class="span title-2 price">$8/$12</span>
+                  </div>
+                  <p class="card-text label-1">Chopped romaine lettuce, tomatoes, cucumbers, red onions, green bell peppers, Kalamata olives, feta cheese. Add chicken or gyro meat</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Antipasto Salad</span>
+                    <span class="span title-2 price">$0</span>
+                  </div>
+                  <p class="card-text label-1">Chopped romaine lettuce, tomatoes, red onions, salami, pepperoni, Grande cheese, sliced black olives, house-made dressing</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Blue Caesar</span>
+                    <span class="span title-2 price">$12</span>
+                  </div>
+                  <p class="card-text label-1">Whole leaf romaine lettuce, house-made blue cheese dressing, Danish blue cheese crumbles, chopped bacon, cherry tomatoes</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Caesar Salad</span>
+                    <span class="span title-2 price">$8/$12</span>
+                  </div>
+                  <p class="card-text label-1">Chopped romaine lettuce, house-made Caesar dressing, croutons, Parmesan cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Arugula Salad</span>
+                    <span class="span title-2 price">$8</span>
+                  </div>
+                  <p class="card-text label-1">Arugula, extra virgin olive oil, lemon, sea salt</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pastas -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Pastas - All Served with House-Made Focaccia Bread</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Spaghetti Marinara</span>
+                    <span class="span title-2 price">$12</span>
+                  </div>
+                  <p class="card-text label-1"></p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Spaghetti Puttanesca</span>
+                    <span class="span title-2 price">$12</span>
+                  </div>
+                  <p class="card-text label-1">Anchovies, Kalamata olives, capers, in house-made marinara sauce</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Fettuccine Alfredo</span>
+                    <span class="span title-2 price">$14</span>
+                  </div>
+                  <p class="card-text label-1"></p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Cheese Tortellini</span>
+                    <span class="span title-2 price">$18</span>
+                  </div>
+                  <p class="card-text label-1">Tossed with your choice of marinara, Alfredo, or pesto sauce</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Spinach or Mushroom Ravioli</span>
+                    <span class="span title-2 price">$16</span>
+                  </div>
+                  <p class="card-text label-1">Tossed with your choice of marinara, Alfredo, or pesto sauce</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Cheese Ravioli</span>
+                    <span class="span title-2 price">$15</span>
+                  </div>
+                  <p class="card-text label-1">Tossed with your choice of marinara, Alfredo, or pesto sauce</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Sandwiches, Strombolis, And Slices -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Sandwiches, Strombolis, And Slices</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Gyro Pita</span>
+                    <span class="span title-2 price">$12</span>
+                  </div>
+                  <p class="card-text label-1"></p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Chicken Parmesan Sandwich</span>
+                    <span class="span title-2 price">$12</span>
+                  </div>
+                  <p class="card-text label-1"></p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Meatball Stromboli</span>
+                    <span class="span title-2 price">$16</span>
+                  </div>
+                  <p class="card-text label-1">Grande cheese, meatballs, garlic, house-made pizza sauce</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Paisano Stromboli</span>
+                    <span class="span title-2 price">$16</span>
+                  </div>
+                  <p class="card-text label-1">Grande cheese, Italian sausage, pepperoni, house-made pizza sauce</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Custom Stromboli</span>
+                    <span class="span title-2 price">$12</span>
+                  </div>
+                  <p class="card-text label-1">Add custom toppings</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Pizzas -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Pizzas - Available in 12 or 14-inch</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">The Greek God (Pan Pizza)</span>
+                    <span class="span title-2 price">$26/$32</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, salami, green bell peppers, red onions, Kalamata olives, tomatoes, feta cheese, oregano, Grande cheese blend</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">The Italian Job</span>
+                    <span class="span title-2 price">$26/$32</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, Italian sausage, salami, pepperoni, mushrooms, green bell peppers, white onions, black olives, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">The Caveman (LOADED)</span>
+                    <span class="span title-2 price">$30/$36</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, Canadian bacon, salami, pepperoni, ham, bacon, Italian sausage, sliced meatballs, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">The Gardener</span>
+                    <span class="span title-2 price">$25/$31</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, mushrooms, black olives, roasted red bell peppers, white onions, sliced tomatoes, artichoke hearts, garlic, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Honolulu Heat</span>
+                    <span class="span title-2 price">$24/$29</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, ham, pepperoni, pineapple, jalapeños, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Chicken Pesto</span>
+                    <span class="span title-2 price">$26/$32</span>
+                  </div>
+                  <p class="card-text label-1">Creamy pesto sauce, chicken, mushrooms, garlic, sun-dried tomatoes, red onions, pesto sauce lines, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Chicken Alfredo</span>
+                    <span class="span title-2 price">$24/$29</span>
+                  </div>
+                  <p class="card-text label-1">Creamy Alfredo sauce, chicken, mushrooms, garlic</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">BBQ Chicken</span>
+                    <span class="span title-2 price">$24/$29</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, chicken, BBQ sauce lines, red onions, bacon, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Pizza Puttanesca</span>
+                    <span class="span title-2 price">$18/$22</span>
+                  </div>
+                  <p class="card-text label-1">San Marzano tomato sauce, anchovies, Kalamata olives, capers, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Margarita</span>
+                    <span class="span title-2 price">$18/$22</span>
+                  </div>
+                  <p class="card-text label-1">San Marzano tomato sauce, Galbani fresh mozzarella, fresh basil</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Pepperoni</span>
+                    <span class="span title-2 price">$16/$20</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, pepperoni, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Cheese</span>
+                    <span class="span title-2 price">$14/$16</span>
+                  </div>
+                  <p class="card-text label-1">House-made pizza sauce, Grande cheese</p>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Pizza By The Slice</span>
+                    <span class="span title-2 price">$7</span>
+                  </div>
+                  <p class="card-text label-1">Cheese or Pepperoni, or Custom</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Build Your Own -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Build Your Own Pizza or Stromboli</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Choose Size - 12 Inch or 14 Inch</span>
+                    <span class="span title-2 price">$14/$16</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Choose from house-made pizza sauce, creamy Alfredo sauce, creamy pesto sauce, or San Marzano tomato sauce</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Capers, artichoke hearts, basil, bell peppers, white onions, red onions, black olives, pineapple, mushrooms, garlic, jalapeños, roasted red bell peppers</span>
+                    <span class="span title-2 price">$2 Per</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Sausage, pepperoni, salami, meatballs, chicken, ham, Canadian bacon, bacon, Kalamata olives, roasted bell peppers, feta cheese, blue cheese crumbles, fresh mozzarella cheese</span>
+                    <span class="span title-2 price">$3 Per</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Kids Menu -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Kids Menu</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Maria's Chicken Tenders with Fries</span>
+                    <span class="span title-2 price">$6</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Michael's Cheese Ravioli with Marinara Sauce</span>
+                    <span class="span title-2 price">$6</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Evelina's Pepperoni or Cheese Pita Pizza</span>
+                    <span class="span title-2 price">$6</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Eleni's Spaghetti with Marinara Sauce or Butter</span>
+                    <span class="span title-2 price">$6</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Desserts -->
+          <div class="menu-section">
+            <h3 class="title-3 section-subtitle">Desserts</h3>
+            <ul class="grid-list">
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Tiramisu</span>
+                    <span class="span title-2 price">$9</span>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="menu-card">
+                  <div class="title-wrapper">
+                    <span class="card-title">Cannoli</span>
+                    <span class="span title-2 price">$7</span>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </article>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer section has-bg-image text-center" style="background-image: url('./assets/images/footer-bg.png')">
+    <div class="container" id="contact">
+      <div class="footer-top grid-list">
+        <div class="footer-brand has-before has-after">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="160" height="50" loading="lazy" alt="Fournos home">
+          </a>
+          <address class="body-4">
+            600 Dutton Ave, Ste C, San Leandro, CA 94577
+          </address>
+          <a href="mailto:fournossl@gmail.com" class="body-4 contact-link">fournossl@gmail.com</a>
+          <a href="tel:5105673453" class="body-4 contact-link">Phone | 510-567-3453</a>
+          <p class="body-4">
+            Open | 11:00am - 9:30pm
+          </p>
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+        </div>
+        <ul class="footer-list">
+          <li>
+            <a href="index.html" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+          <li>
+            <a href="menu.html" class="label-2 footer-link hover-underline">Menu</a>
+          </li>
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">About Us</a>
+          </li>
+          <li>
+            <a href="#contact" class="label-2 footer-link hover-underline">Contact</a>
+          </li>
+        </ul>
+        <ul class="footer-list">
+          <li>
+            <a href="#" class="label-2 footer-link hover-underline">Google Maps</a>
+          </li>
+          <li>
+            <a href="https://www.facebook.com/slfournos" class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/fournos_sl/" class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+          <li>
+            <a href="https://www.yelp.com/biz/fournos-san-leandro" class="label-2 footer-link hover-underline">Yelp</a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p class="copyright">
+          &copy; 2025 Fournos. All Rights Reserved | Powered by <a href="https://github.com/codewithsadee" target="_blank" class="link">GitHub</a>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- Scripts -->
+  <script src="./assets/js/script.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
